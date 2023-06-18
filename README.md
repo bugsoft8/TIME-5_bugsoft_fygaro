@@ -1,10 +1,8 @@
 # Fygaro
 
-> Whitepace (landing Page - Responsive)
-
 ## 🚀 Demanda
 
-O projeto será focado em trazer o nicho das barbearias para algo similar a um marketplace onde cada barbearia contará com um perfil próprio o qual poderá modificar com suas informações aumentando sua exposição para atrair clientes novos, permitindo também aos donos das barbearias um certo nível administrativo de seus negócios podendo realizar agendamentos e vendas de produtos diretamente através do app, e para o usuário cliente das barbearias o app providenciará uma forma facil e rapida de pesquisa de barbearias que agradem seu gosto.
+O projeto será focado em trazer o nicho das barbearias para algo similar a um marketplace onde cada barbearia contará com um perfil próprio o qual poderá modificar com suas informações aumentando sua exposição para atrair clientes novos, permitindo também aos donos das barbearias um certo nível administrativo de seus negócios podendo realizar agendamentos e vendas de produtos diretamente através do app, e para o usuário cliente das barbearias o app providenciará uma forma facil e rapida de pesquisa de barbearias que agradem ao seu gosto.
 
 ### 💻 Figma:
 
@@ -13,39 +11,40 @@ O projeto será focado em trazer o nicho das barbearias para algo similar a um m
 ## GIT
 
 ### Branch
-> Deve ser criardo uma nova branch para cada página nova, seguindo o padrão de nomenclatura já definida no trello.
-    - **EXEMPLO** Para criar a página `register`.
-    1 - Crie primeiro uma branch chamada `register`, usando o comando: ```git checkout -b register```.
-    2 - A partir disso, crie uma pasta usando o mesmo nome.
-    3 - para sicronizar a sua branch com o repositório remoto, utilize: ```git push -u origin register```.
+> Deve ser criarda uma nova branch para cada página nova, seguindo o padrão de nomenclatura já definida no trello.
+- **EXEMPLO** Para criar a página `register`. <br>
+1 - Crie primeiro uma branch chamada `register`, usando o comando: ```git checkout -b register```.<br>
+2 - A partir disso, crie uma pasta usando o mesmo nome.<br>
+3 - para sicronizar a sua branch com o repositório remoto, utilize: ```git push -u origin register```.<br>
 
 ### Commit
-> Siga o padrão de nomeclatura definidas para os commits.
-    - Nomes.
-        - **OBRIGATIO, sempre ser usado**
+> Siga o padrão de nomeclatura definida para os commits.<br>
 
-        - `feat:` São adições de novas funcionalidades.
-        - `fix:` Correções de bugs.
-        - `refactor:` Mudanças de código que não corrige um bug ou adiciona novas funcionalidades.
-        - `style:` Alterações referentes a formatações na apresentação do código que não afetam o significado do código, como por exemplo: espaço em branco, formatação, ponto e vírgula ausente etc.
-        - `revert:` Resverter um commit já realizado.
-        - `docs:` Inclusão ou alteração somente de arquivos de documentação.
-        - `chore:` Mudança externa que não afeta o codigo em si, (ex: mudanças no .gitignore)
+**Nomes.**<br>
+*OBRIGATORIO, sempre ser usado*<br>
 
-    - Escopo.
-        - **OPCIONAL, usar quando sentir ser necessario**
+- `feat:` São adições de novas funcionalidades.<br>
+- `fix:` Correções de bugs.<br>
+- `refactor:` Mudanças de código que não corrige um bug ou adiciona novas funcionalidades.<br>
+- `style:` Alterações referentes a formatações na apresentação do código que não afetam o significado do código, como por exemplo: espaço em branco, formatação, ponto e vírgula ausente etc.<br>
+- `revert:` Reverter um commit já realizado.<br>
+- `docs:` Inclusão ou alteração apenas de arquivos de documentação.<br>
+- `chore:` Mudança externa que não afeta o codigo em si, (ex: mudanças no .gitignore)<br>
 
-        - `():` Escopo serve para fornece mais contexto sobre o problema.
+**Escopo.** <br>
+*OPCIONAL, usar quando sentir ser necessario* <br>
 
-    - **EXEMPLO** de commit.
-        *sem escopo*
-        - `feat: add header`
-        *com escopo*
-        - `refactor(header): change position of button`
+- `():` Escopo serve para fornece mais contexto sobre o problema. <br>
+
+**EXEMPLO** de commit.<br>
+  - *sem escopo*
+      - `feat: add header`
+  - *com escopo*
+      - `refactor(header): change position of button`
 
 
 
-## Entendendo decisões arquiteturais e a estrutura do projeto
+## Entendendo a estrutura do projeto
 
 ### Estrutura do projeto
 
@@ -53,8 +52,11 @@ O projeto será focado em trazer o nicho das barbearias para algo similar a um m
 📁 TIME-5_bugsoft_fygaro
 └── 📁 src
     ├── 📁 assets
+    │   ├── 📁 colors
+    │   ├── 📁 fonts
     │   ├── 📁 icons
-    │   └── 📁 images
+    │   ├── 📁 images
+    │   └── 📁 reset
     ├── 📁 components
     │   ├── 📁 header
     │   |   ├── 📄 index.html
@@ -64,19 +66,29 @@ O projeto será focado em trazer o nicho das barbearias para algo similar a um m
         ├── 📁 login
         |   ├── 📄 index.html
         |   └── 📄 style.css
-        └── 📁 barbeshop
-            ├── 📄 ...
-            └── 📄 ...
+        ├── 📁 barbeshop
+        |   ├── 📄 ...
+        |   └── 📄 ...
+        └── 📁 ...
 
 ```
 ### Como me localizar no projeto?
 
-- `./src/assets` Contem todas as imagens e icons utilizadas nesse projeto
-- `./src/components`: Deve ser usada para armazenar componentes reutilizáveis
+- `./src/assets` Contém todos os componentes básicos utilizados neste projeto.
+    - Utilize as classes de fontes e cores para aplicar onde desejar (*Evite usar cores e fontes isoladas no código*).
+    - Nomes das fontes e cores são os mesmos do figma.
+- `./src/components`: Deve ser usada para armazenar componentes reutilizáveis.
 - `./src/pages`: Todas as páginas do projeto estão listadas em `./src/pages`.
     - Para cada nova página, deve ser criada uma nova pasta que contenha os arquivos `.html` e `.css` respectivos a essa página.
-        - Exemplo de diretorio `./src/pages/register`, contendo `index.hmtl` e `style.css`
+        - Exemplo de diretorio `./src/pages/register`, contendo `index.hmtl` e `style.css`.
         - Siga o padrão de nomenclatura das pastas já definidas no trello.
+
+
+## Outras obrigatoriedades
+>Usar sempre no inicio do documento html
+- Reset: `<link rel="stylesheet" href="../../../assets/reset/reset.css">`
+- Fonts: `<link rel="stylesheet" href="../../../assets/fonts/fonts.css">`
+- Colors: `<link rel="stylesheet" href="../../../assets/colors/colors.css">`
 
 ## 🤝 Colaboradores
 

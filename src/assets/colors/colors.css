@@ -1,0 +1,50 @@
+/* - Utilize as classes de fontes e cores para aplicar onde desejar (*Evite usar cores e fontes isoladas no código*). */
+/* - Nomes das fontes e cores são os mesmos do figma. */
+
+.color_white {
+    color: #FFFFFF;
+}
+
+.color_black {
+    color: #000000;
+}
+
+.color_primary {
+    color: #F5F3F4;
+}
+
+.color_secundary {
+    color: #1B1919;
+}
+
+.color_gray-dark {
+    color: #5A5A5A;
+}
+
+.color_gray-white--input {
+    color: #C2C2C2;
+}
+
+.color_btn-cart {
+    color: rgba(219, 201, 201, 0.6);
+}
+
+.color_btn-slider--1 {
+    color: rgba(217, 217, 217, 0.5);
+}
+
+.color_btn-slider--2 {
+    color: rgba(227, 242, 253, 0.5);;
+}
+
+.color_blue-link {
+    color: #2555FF;
+}
+
+.color_green-link {
+    color: #33FF21;
+}
+
+.color_star-fill {
+    color: #F5C64D;
+}
