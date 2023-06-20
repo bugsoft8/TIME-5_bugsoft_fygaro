@@ -86,9 +86,9 @@ O projeto será focado em trazer o nicho das barbearias para algo similar a um m
 
 ## Outras obrigatoriedades
 >Usar sempre no inicio do documento html
-- Reset: `<link rel="stylesheet" href="../../../assets/reset/reset.css">`
-- Fonts: `<link rel="stylesheet" href="../../../assets/fonts/fonts.css">`
-- Colors: `<link rel="stylesheet" href="../../../assets/colors/colors.css">`
+- Reset: `<link rel="stylesheet" href="../../assets/reset/reset.css">`
+- Fonts: `<link rel="stylesheet" href="../../assets/fonts/fonts.css">`
+- Colors: `<link rel="stylesheet" href="../../assets/colors/colors.css">`
 
 ## 🤝 Colaboradores
 
