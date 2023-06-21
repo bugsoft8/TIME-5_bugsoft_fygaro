@@ -1,4 +1,68 @@
 'use strict'
+/*---------------------------chama o html no js para utilizar em diversas telas-----------------------------------------------------*/
+const template = document.createElement('template');
+
+template.innerHTML = `
+<div class="wrapper">
+<div class="slide-wrapper" data-slide="wrapper">
+    <button class="slide-btn slide-btn-prev" data-slide="slide-btn-prev">
+        <img src="../../assets/icons/btn_slider_left--2.svg" alt="btn previous">
+    </button>
+    <button class="slide-btn slide-btn-next" data-slide="slide-btn-next">
+        <img src="../../assets/icons/btn_slider_left--2.svg" alt="btn next">
+    </button>
+    <div class="slide-list" data-slide="list">
+        <div class="slide-item" data-slide="item" data-index="0">
+            <div class="slide-content">
+                <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Perdomo">
+                <div class="slide-description">
+                    <h3 class="font_slide-h2 color_secundary">Barbearia Perdomo</h3>
+                    <p class="font_slide-descri color_gray-dark">Rua do Magistério, 344, 85875-000,<br>Santa Terezinha de Itaipu</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item" data-slide="item" data-index="1">
+            <div class="slide-content">
+                <img src="../../assets/images/barbershop_slider.svg" alt="Renovo_Barbershop">
+                <div class="slide-description">
+                    <h3 class="font_slide-h2 color_secundary">Renovo Barbershop</h3>
+                    <p class="font_slide-descri color_gray-dark">Rua Edmundo de Barros,<br>163, 1, 85856-310, Foz do Iguaçu</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item" data-slide="item" data-index="2">
+            <div class="slide-content">
+                <img src="../../assets/images/barbershop_slider.svg" alt="Original_Barbearia-e-Lavacar">
+                <div class="slide-description">
+                    <h3 class="font_slide-h2 color_secundary">Original Barbearia e Lavacar</h3>
+                    <p class="font_slide-descri color_gray-dark">Rua Emilio de Menezes,<br>497, 85864-240, Foz do Iguaçu</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item" data-slide="item" data-index="3">
+            <div class="slide-content">
+                <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Alexandre_Santos">
+                <div class="slide-description">
+                    <h3 class="font_slide-h2 color_secundary">Barbearia Alexandre Santos</h3>
+                    <p class="font_slide-descri color_gray-dark">Rua Iraque, N 70, 13315-000,<br>Cabreúva</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item" data-slide="item" data-index="4">
+            <div class="slide-content">
+                <img src="../../assets/images/barbershop_slider.svg" alt="Black_White_BarberShop">
+                <div class="slide-description">
+                    <h3 class="font_slide-h2 color_secundary">Black White Barber Shop</h3>
+                    <p class="font_slide-descri color_gray-dark">Av Felipe Wandscheer, 1426, 85863-730,<br>Foz do Iguaçu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+`;
+document.body.appendChild(template.content);
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 const slideWrapper = document.querySelector('[data-slide="wrapper"]') 
 const slideList = document.querySelector('[data-slide="list"]') 
