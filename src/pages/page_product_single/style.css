@@ -1,0 +1,53 @@
+.content{
+    display: flex;
+    gap: 129px;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch{
+    display: inline;
+    position: relative;
+}
+
+
+.switch input{
+    display: none;
+    
+}
+
+
+.switch input + label::before{
+    display: flex;
+    content:icon;
+    width: 9px;
+    height: 9px;
+    
+}
+
+.switch input:checked + label:before{
+    background-color: rgb(196, 193, 193);
+
+}
+
+
+.product_detail{
+    margin-top: 120px;
+    width: 444px;
+    height: 413px;
+}
+
+.botao{
+    position: absolute;
+    z-index: 1;
+    margin-top: 180px;
+    cursor: pointer;   
+}
+
+.botao_left{
+    transform: rotate(180deg);
+}
+
+.botao_right{
+    right: 0;
+}
