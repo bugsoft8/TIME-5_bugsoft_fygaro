@@ -12,30 +12,53 @@
 
 
 .switch input{
-    display: none;
-    
+    display: none;    
 }
 
 
-.switch input + label::before{
+
+.switch_circle{
     display: flex;
-    content:icon;
+    position: absolute;
+    gap: 12px;
+    margin-top: 330px;
+    margin-right: 550px;
+    justify-content: center;
+
+}
+
+.switch_circle input{
+    display: none;    
+}
+
+
+.bolinha{
     width: 9px;
     height: 9px;
+    border-radius: 50px;
+    background-color: rgb(131, 130, 130);
     
 }
 
-.switch input:checked + label:before{
-    background-color: rgb(196, 193, 193);
+.bolinha_verde{
+    background-color: rgb(0, 255, 81);
 
 }
 
-
 .product_detail{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
     margin-top: 120px;
     width: 444px;
     height: 413px;
 }
+
+.product_detail>img{
+    height: 25px;
+    width: 24px;
+}
+
 
 .botao{
     position: absolute;
