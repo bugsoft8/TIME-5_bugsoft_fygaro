@@ -34,7 +34,7 @@
     height: 9px;
     border-radius: 50px;
     background-color: rgb(0, 255, 81);
-    
+
 }
 
 .bolinha_verde {
@@ -44,18 +44,46 @@
 
 .product_detail {
     display: flex;
-    justify-content: center;
-    gap: 13px;
-    margin-top: 120px;
+    flex-direction: column;
+    padding-top: 120px;
     width: 444px;
     height: 413px;
 }
 
-.product_detail>img {
-    height: 25px;
-    width: 24px;
+
+
+.title_detail {
+    width: 444px;
+    height: 88px;
+    position: relative;
+    display: flex;
 }
 
+.images_title {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-top: 87px;
+    width: 71px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+
+.estoque_detail {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+    width: 145px;
+    margin-right: 100px;
+}
+
+.text_color {
+    background: linear-gradient(to right, rgb(0, 0, 0) 35%, #33FF21 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .botao {
     position: absolute;
@@ -70,4 +98,31 @@
 
 .botao_right {
     right: 0;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 126px;
+    width: 430px;
+    height: 179px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.images_card {
+    align-items: flex-start;
+    margin-left: 240px;
+    position: absolute;
+}
+
+.payment_text{
+    margin-top: 10.4px;
+    width: 271px;
+    height: 40px;
+    text-decoration-line: underline;
+}
+
+.btn_payment{
+    cursor: pointer;
 }
