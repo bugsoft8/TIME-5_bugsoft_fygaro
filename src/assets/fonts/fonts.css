@@ -114,3 +114,11 @@
     font-size: 16px;
     line-height: 15px;
 }
+
+.font_filter-h1 {
+    font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
