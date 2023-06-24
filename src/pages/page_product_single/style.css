@@ -1,51 +1,48 @@
-.content{
+.content {
     display: flex;
     gap: 129px;
     justify-content: center;
     align-items: center;
 }
 
-.switch{
+.switch {
     display: inline;
     position: relative;
 }
 
 
-.switch input{
-    display: none;    
+.switch input {
+    display: none;
 }
 
-
-
-.switch_circle{
+.switch_circle {
     display: flex;
     position: absolute;
     gap: 12px;
     margin-top: 330px;
     margin-right: 550px;
     justify-content: center;
-
 }
 
-.switch_circle input{
-    display: none;    
+.switch_circle input {
+    display: none;
 }
 
 
-.bolinha{
+.bolinha {
     width: 9px;
     height: 9px;
     border-radius: 50px;
-    background-color: rgb(131, 130, 130);
+    background-color: rgb(0, 255, 81);
     
 }
 
-.bolinha_verde{
-    background-color: rgb(0, 255, 81);
+.bolinha_verde {
+    background-color: rgb(131, 130, 130);
 
 }
 
-.product_detail{
+.product_detail {
     display: flex;
     justify-content: center;
     gap: 13px;
@@ -54,23 +51,23 @@
     height: 413px;
 }
 
-.product_detail>img{
+.product_detail>img {
     height: 25px;
     width: 24px;
 }
 
 
-.botao{
+.botao {
     position: absolute;
     z-index: 1;
     margin-top: 180px;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
-.botao_left{
+.botao_left {
     transform: rotate(180deg);
 }
 
-.botao_right{
+.botao_right {
     right: 0;
 }
