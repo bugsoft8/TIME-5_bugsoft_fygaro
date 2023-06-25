@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../assets/colors/colors.css">
     <link rel="stylesheet" href="../../assets/fonts/fonts.css">
     <link rel="stylesheet" href="../../assets/reset/reset.css">
+    <script defer src="script.js"></script>
 </head>
 
 <div class="content">
@@ -31,7 +32,7 @@
 
         <div class="title_detail">
             <h1 class="font_h1 color_secundary">Balm para barba-barba de respeito 100g</h1>
-            
+
             <div class="images_title">
                 <img class="share" src="../../assets/icons/share.svg" alt="share">
                 <img src="../../assets/icons/like.svg" alt="like">
@@ -44,27 +45,53 @@
         </div>
 
         <div class="payment">
-            <h1 class="color_secundary font_slide-h1" >R$ 69,90</h1>
+            <h1 class="color_secundary font_slide-h1">R$ 69,90</h1>
 
             <div class="images_card">
                 <img class="card" src="../../assets/images/card.svg" alt="card">
-                
+
             </div>
-            
-            <p class="payment_text font_slide-h2 color_secundary" >até 2x de R$ 34,95 sem juros<br>
+
+            <p class="payment_text font_slide-h2 color_secundary">até 2x de R$ 34,95 sem juros<br>
                 ou 67,40 via Boleto Bancário</p>
-                <br>
-                <p class="btn_payment font_opc-pay color_green-link" >Outras formas de pagamento ▼ </p>
+            <br>
+
+
+            <div class="payment_list">
+
+                <button class="btn_payment font_opc-pay color_green-link onclic" onclick="toggleImagem()">Outras formas
+                    de
+                    pagamento ▼
+                </button>
+                <div class="forma_pagamento">
+
+                    <div id="forma_pagamento" class="imagem-div">
+                        <img class="forma_pagamento" src="../../assets/images/forma_pagamento.svg"
+                            alt="forma_pagamento">
+                    </div>
+
+                </div>
+                <div class="add_car">
+                    <div class="btn_quantity" >
+                        <button  class="space" onclick="decrementar()"><strong>-</strong></button>
+                        <span class="color_secundary font_opc-pay"  id="contador">0</span>
+                        <button class="space"  onclick="incrementar()"><strong> +</strong></button>
+                    </div>
+
+                    <div class="addon" >
+                        <button class="button_car_payment color_secundary font_btn-input ">
+                            Adicionar ao carrinho
+                            <img class="add_cart" src="../../assets/icons/cart_add.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </div>
 
-
-
-    </div>
-
-</div>
-
-
-</body>
-<script src="script.js"></script>
+        <script src="script.js"></script>
 
 </html>

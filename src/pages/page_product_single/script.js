@@ -1,10 +1,5 @@
+
 const bolinhas = document.getElementsByClassName ('bolinha');
-
-const $payment = document.getElementsByClassName ('btn_payment');
-
-$payment.addEventListener('click', function(){
-    
-});
 
 
 const $checkbox = document.querySelector('#switch');
@@ -12,7 +7,7 @@ const $checkbox = document.querySelector('#switch');
 $checkbox.addEventListener('change', function(){
     if($checkbox.checked==true){
         document.getElementById("imagem").src="../../assets/images/product_single.svg";
-
+        
         bolinhas[0].classList.remove('bolinha_verde')
         bolinhas[1].classList.add('bolinha_verde')
     }
@@ -22,3 +17,26 @@ $checkbox.addEventListener('change', function(){
         bolinhas[0].classList.add('bolinha_verde')
     }
 });
+
+function toggleImagem() {
+    var imagemDiv = document.getElementById("forma_pagamento");
+    if (imagemDiv.style.display === "none") {
+        imagemDiv.style.display = "block";
+    } else {
+        imagemDiv.style.display = "none";
+    }
+}
+
+var contador = 0;
+      
+function incrementar() {
+  contador++;
+  document.getElementById("contador").textContent = contador;
+}
+
+function decrementar() {
+  if (contador > 0) {
+    contador--;
+    document.getElementById("contador").textContent = contador;
+  }
+}

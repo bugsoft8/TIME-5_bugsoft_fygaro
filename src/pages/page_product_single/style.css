@@ -100,6 +100,10 @@
     right: 0;
 }
 
+.imagem-div {
+    display: none;
+}
+
 .payment {
     display: flex;
     flex-direction: column;
@@ -116,13 +120,70 @@
     position: absolute;
 }
 
-.payment_text{
+.payment_text {
     margin-top: 10.4px;
     width: 271px;
     height: 40px;
     text-decoration-line: underline;
 }
 
-.btn_payment{
+.btn_payment {
     cursor: pointer;
+    border: none;
+    background-color: white;
+
+}
+
+.formar_pagamento {
+    visibility: hidden;
+}
+
+.addon {
+    justify-content: flex-end;
+}
+
+.button_car_payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(219, 201, 201, 0.6);
+    width: 209px;
+    height: 34px;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.25));
+}
+
+.add_car {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.btn_quantity {
+    display: flex;
+    margin-right: 280px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68.171px;
+    height: 34.747px;
+    border: 0.5px solid var(--secondary-color, #1B1919);
+    background: rgba(242, 241, 241, 0.85);
+}
+
+
+.space {
+    width: 31.463px;
+    height: 34.747px;
 }
