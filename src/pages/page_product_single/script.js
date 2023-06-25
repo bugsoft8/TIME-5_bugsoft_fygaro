@@ -40,3 +40,14 @@ function decrementar() {
     document.getElementById("contador").textContent = contador;
   }
 }
+
+
+  $(document).ready(function() {
+    $('.cep-input').mask('00000-000');
+  });
+
+  function toggleDescricao() {
+    var descricaoDiv = document.querySelector('.descricao-produto');
+    descricaoDiv.classList.toggle('expandir');
+  }
+

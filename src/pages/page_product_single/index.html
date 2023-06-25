@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../assets/fonts/fonts.css">
     <link rel="stylesheet" href="../../assets/reset/reset.css">
     <script defer src="script.js"></script>
+
+    <script src="../../components/image_carousel/product.js" type="text/javascript" defer></script> 
 </head>
 
 <div class="content">
@@ -72,26 +74,57 @@
 
                 </div>
                 <div class="add_car">
-                    <div class="btn_quantity" >
-                        <button  class="space" onclick="decrementar()"><strong>-</strong></button>
-                        <span class="color_secundary font_opc-pay"  id="contador">0</span>
-                        <button class="space"  onclick="incrementar()"><strong> +</strong></button>
+                    <div class="btn_quantity">
+                        <button class="space" onclick="decrementar()"><strong>-</strong></button>
+                        <span class="color_secundary font_opc-pay" id="contador">0</span>
+                        <button class="space" onclick="incrementar()"><strong> +</strong></button>
                     </div>
 
-                    <div class="addon" >
+                    <div class="addon">
                         <button class="button_car_payment color_secundary font_btn-input ">
                             Adicionar ao carrinho
                             <img class="add_cart" src="../../assets/icons/cart_add.svg" alt="">
                         </button>
                     </div>
                 </div>
-
-
-
             </div>
-
         </div>
 
-        <script src="script.js"></script>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+        <div class="cep">
+            <input type="text" id="cep" class="cep-input" placeholder="CEP">
+            <p class="calcular color_secundary font_btn-input">CALCULAR</p>
+
+        </div>
+    </div>
+
+</div>
+<div class="carousel">
+    <div class="carousel_title ">
+        <h1 class="font_slide-h1 color_secundary" >Produtos Relacionados</h1>
+    </div>
+    <div class="carousel-product"></div>
+</div>
+
+<div class="product_discription">
+    <div class="descricao-produto">
+        
+        <button class="botao-exibir color_secundary font_slide-h1" onclick="toggleDescricao()"> Descrição do Produto </button>
+        <p class="font_slide-descri--2" >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut, pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu mollis lorem condimentum sed.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut, pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu mollis lorem condimentum sed.
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut, pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu mollis lorem condimentum sed.</p>
+    </div>
+
+    <div class="avaliacao">
+        
+    </div>
+    
+    <script src="script.js"></script>
+</div>
 </html>
