@@ -1,3 +1,4 @@
+/*------------------------------------------------ START PRODUCTS CAROUSEL --------------------------------------------------*/ 
 const imageCarouselProduct = document.createElement('div');
 
 imageCarouselProduct.innerHTML = `
@@ -8,7 +9,7 @@ imageCarouselProduct.innerHTML = `
             justify-content: center;
             justify-content: space-between;
             width: 1110px;
-            height: 242.5px;
+            height: 240px;
             overflow: hidden; 
             position: relative;
         }
@@ -111,15 +112,104 @@ imageCarouselProduct.innerHTML = `
                 </div>
             </div>
         </div>
-    </div>`;
+    </div>
+`;
+
+const bodyElementsProduct = document.getElementsByClassName('carousel-product');
+
+Array.from(bodyElementsProduct).forEach(function (element) {
+    const imageCarouselElement = document.createElement('div');
+    imageCarouselElement.innerHTML = imageCarouselProduct.innerHTML;
+    element.appendChild(imageCarouselElement);
+
+    const sliderProduct = initSlider(imageCarouselElement);
+    
+});
+/*------------------------------------------------ END PRODUCTS CAROUSEL --------------------------------------------------*/ 
+
+/*------------------------------------------------ START BARBERSHOP CAROUSEL --------------------------------------------------*/ 
+const imageCarouselBarbershop = document.createElement('div');
+
+imageCarouselBarbershop.innerHTML = `
+    
+  
+    <div class="wrapper">
+        <div class="slide-wrapper" data-slide="wrapper">
+            <button class="slide-btn slide-btn-prev" data-slide="slide-btn-prev">
+                <img src="../../assets/icons/btn_slider_left--2.svg" alt="btn previous">
+            </button>
+            <button class="slide-btn slide-btn-next" data-slide="slide-btn-next">
+                <img src="../../assets/icons/btn_slider_left--2.svg" alt="btn next">
+            </button>
+            <div class="slide-list" data-slide="list">
+                <div class="slide-item" data-slide="item" data-index="0">
+                    <div class="slide-content">
+                        <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Perdomo">
+                        <div class="slide-description">
+                            <h3 class="font_slide-h2 color_secundary">Barbearia Perdomo</h3>
+                            <p class="font_slide-descri color_gray-dark">Rua do Magistério, 344, 85875-000,<br>Santa Terezinha de Itaipu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="1">
+                    <div class="slide-content">
+                        <img src="../../assets/images/barbershop_slider.svg" alt="Renovo_Barbershop">
+                        <div class="slide-description">
+                            <h3 class="font_slide-h2 color_secundary">Renovo Barbershop</h3>
+                            <p class="font_slide-descri color_gray-dark">Rua Edmundo de Barros,<br>163, 1, 85856-310, Foz do Iguaçu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="2">
+                    <div class="slide-content">
+                        <img src="../../assets/images/barbershop_slider.svg" alt="Original_Barbearia-e-Lavacar">
+                        <div class="slide-description">
+                            <h3 class="font_slide-h2 color_secundary">Original Barbearia e Lavacar</h3>
+                            <p class="font_slide-descri color_gray-dark">Rua Emilio de Menezes,<br>497, 85864-240, Foz do Iguaçu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="3">
+                    <div class="slide-content">
+                        <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Alexandre_Santos">
+                        <div class="slide-description">
+                            <h3 class="font_slide-h2 color_secundary">Barbearia Alexandre Santos</h3>
+                            <p class="font_slide-descri color_gray-dark">Rua Iraque, N 70, 13315-000,<br>Cabreúva</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="4">
+                    <div class="slide-content">
+                        <img src="../../assets/images/barbershop_slider.svg" alt="Black_White_BarberShop">
+                        <div class="slide-description">
+                            <h3 class="font_slide-h2 color_secundary">Black White Barber Shop</h3>
+                            <p class="font_slide-descri color_gray-dark">Av Felipe Wandscheer, 1426, 85863-730,<br>Foz do Iguaçu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+`;
+
+const bodyElementsBarbershop = document.getElementsByClassName('carousel-barbershop');
+
+Array.from(bodyElementsBarbershop).forEach(function (element) {
+        const imageCarouselElement = document.createElement('div');
+        imageCarouselElement.innerHTML = imageCarouselBarbershop.innerHTML;
+        element.appendChild(imageCarouselElement);
+    
+        const sliderBarbershop = initSlider(imageCarouselElement);
+});
+/*------------------------------------------------ END BARBERSHOP CAROUSEL --------------------------------------------------*/ 
 
 function initSlider(carouselElement) {
     const slideWrapper = carouselElement.querySelector('.slide-wrapper');
     const slideList = carouselElement.querySelector('[data-slide="list"]');
     const navPreviousButton = carouselElement.querySelector('[data-slide="slide-btn-prev"]');
     const navNextButton = carouselElement.querySelector('[data-slide="slide-btn-next"]');
-    let slideItems = carouselElement.querySelectorAll('[data-slide="item"]');
-  
+    let slideItems = Array.from(carouselElement.querySelectorAll('[data-slide="item"]'));
+
     const state = {
         startingPoint: 0,
         savedPosition: 0,
@@ -137,7 +227,7 @@ function initSlider(carouselElement) {
         const slideItem = slideItems[index];
         const slideWidth = slideItem.clientWidth;
         const margin = -15;
-        const position = (margin - index * slideWidth);
+        const position = margin - index * slideWidth;
         return position;
     }
 
@@ -147,7 +237,7 @@ function initSlider(carouselElement) {
         }
         const position = getCenterPosition({ index });
         state.currentSlideIndex = index;
-        slideList.style.transition = animate === true ? 'transform .1s' : 'none';
+        slideList.style.transition = animate === true ? 'transform .4s' : 'none';
         translateSlide({ position });
     }
 
@@ -184,15 +274,11 @@ function initSlider(carouselElement) {
         penultimateSlide.classList.add('slide-cloned');
         penultimateSlide.dataset.index = -2;
 
-        slideList.append(firstSlide);
-        slideList.append(secondSlide);
-        slideList.append(thirdSlide);
-        slideList.append(fourthSlide);
-
-        slideList.prepend(lastSlide);
-        slideList.prepend(penultimateSlide);
-
-        slideItems = document.querySelectorAll('[data-slide="item"]');
+        slideItems = [lastSlide, penultimateSlide, ...slideItems, firstSlide, secondSlide, thirdSlide, fourthSlide];
+        slideList.innerHTML = '';
+        slideItems.forEach((slideItem) => {
+            slideList.appendChild(slideItem);
+        });
     }
 
     function onMouseDown(event, index) {
@@ -201,15 +287,16 @@ function initSlider(carouselElement) {
         state.currentPoint = event.clientX - state.savedPosition;
         state.currentSlideIndex = index;
         slideList.style.transition = 'none';
-        slideItem.addEventListener('mousemove', onMouseMove);
+        // slideItem.addEventListener('mousemove', onMouseMove);
     }
-
+    //função nao utilizada serve para mover o slide arrastando o mouse (caso usar solucionar bug, slide infinito nao funciona)
+    /*
     function onMouseMove(event) {
         const slideItem = event.currentTarget;
         state.movement = event.clientX - state.startingPoint;
         const position = event.clientX - state.currentPoint;
         translateSlide({ position });
-    }
+    }*/
 
     function onMouseUp(event) {
         const slideItem = event.currentTarget;
@@ -245,20 +332,30 @@ function initSlider(carouselElement) {
     function initSlider() {
         createSlideClones();
         setListeners();
-        setVisibleSlide({ index: 2, animate: true });
+        setVisibleSlide({ index: 0, animate: true });
     }
 
     initSlider();
+
+    // Retorna o objeto contendo os elementos e referências relevantes do slide
+    return {
+        slideWrapper,
+        slideList,
+        navPreviousButton,
+        navNextButton,
+        slideItems,
+        translateSlide,
+        setVisibleSlide,
+        nextSlide,
+        previousSlide,
+        createSlideClones,
+        onMouseDown,
+        // onMouseMove,
+        onMouseUp,
+        onSlideListTransitionEnd,
+        setListeners,
+        initSlider
+    };
 }
-
-const bodyElementsProduct = document.getElementsByClassName('carousel-product');
-
-Array.from(bodyElementsProduct).forEach(function (element) {
-    const imageCarouselElement = document.createElement('div');
-    imageCarouselElement.innerHTML = imageCarouselProduct.innerHTML;
-    element.appendChild(imageCarouselElement);
-
-    initSlider(imageCarouselElement);
-});
 
 

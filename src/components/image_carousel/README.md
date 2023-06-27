@@ -6,12 +6,12 @@ Para o correto funcionamento do componente deve-se seguir estes passos:
 
 ### Carosel Barbearias
 
-1-Linkar o arquivo JS do carrosel no HEAD do seu arquivo HTML: ``` <script src="../components/image_carousel/Barbershops.js" type="text/javascript" defer></script> ```
+1-Linkar o arquivo JS do carrosel no HEAD do seu arquivo HTML: ``` <script src="../../components/image_carousel/carousel.js" type="text/javascript" defer></script> ```
 2-Dentro do body de seu html no lugar que deseja adicionar o componente criar a seguinte div: ``` <div class="carousel-barbershop"></div> ```
 
 ### Carosel produtos
 
-1-Linkar o arquivo JS do carrosel no HEAD do seu arquivo HTML: ``` <script src="../components/image_carousel/product.js" type="text/javascript" defer></script> ```
+1-Linkar o arquivo JS do carrosel no HEAD do seu arquivo HTML: ``` <script src="../../components/image_carousel/carousel.js" type="text/javascript" defer></script> ```
 2-Dentro do body de seu html no lugar que deseja adicionar o componente criar a seguinte div: ``` <div class="carousel-product"></div> ```
 
 ## OBS
