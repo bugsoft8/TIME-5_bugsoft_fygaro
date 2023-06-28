@@ -1,142 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../assets/colors/colors.css">
-    <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+    <script src="../../components/image_carousel/carousel.js" type="text/javascript" defer></script>
+    <script src="../../components/header-footer/HeaderFooter.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="../../assets/reset/reset.css">
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../../assets/colors/colors.css">
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
-
-    <script src="../../components/image_carousel/product.js" type="text/javascript" defer></script>
+    <title>Document</title>
 </head>
 
-<div class="content">
-    <div class="switch">
-        <input type="checkbox" id="switch">
+<body>
 
-        <label for="switch"><img class="botao botao_left" src="../../assets/icons/btn_slider--1.svg" alt=""></label>
+    <header-component></header-component>
 
-        <label for="switch"><img class="botao botao_right" src="../../assets/icons/btn_slider--1.svg" alt=""></label>
+    <div class="content">
+        <div class="switch">
+            <input type="checkbox" id="switch">
 
-        <img src="../../assets/images/product_single.svg" id="imagem" />
-    </div>
+            <label for="switch"><img class="botao botao_left" src="../../assets/icons/btn_slider--1.svg" alt=""></label>
 
-    <div class="switch_circle">
-        <div class="bolinha bolinha_verde"></div>
-        <div class="bolinha"></div>
-    </div>
+            <label for="switch"><img class="botao botao_right" src="../../assets/icons/btn_slider--1.svg"
+                    alt=""></label>
 
-    <div class="product_detail">
-
-        <div class="title_detail">
-            <h1 class="font_h1 color_secundary">Balm para barba-barba de respeito 100g</h1>
-
-            <div class="images_title">
-                <img class="share" src="../../assets/icons/share.svg" alt="share">
-                <img src="../../assets/icons/like.svg" alt="like">
-            </div>
-
-            <div class="estoque_detail">
-                <p class=" text_color font_slide-descri color_green-link">Estoque: Disponivel</p>
-            </div>
-
+            <img src="../../assets/images/product_single.svg" id="imagem" />
         </div>
 
-        <div class="payment">
-            <h1 class="color_secundary font_slide-h1">R$ 69,90</h1>
+        <div class="switch_circle">
+            <div class="bolinha bolinha_verde"></div>
+            <div class="bolinha"></div>
+        </div>
 
-            <div class="images_card">
-                <img class="card" src="../../assets/images/card.svg" alt="card">
+        <div class="product_detail">
+
+            <div class="title_detail">
+                <h1 class="font_h1 color_secundary">Balm para barba-barba de respeito 100g</h1>
+
+                <div class="images_title">
+                    <img class="share" src="../../assets/icons/share.svg" alt="share">
+                    <img src="../../assets/icons/like.svg" alt="like">
+                </div>
+
+                <div class="estoque_detail">
+                    <p class=" text_color font_slide-descri color_green-link">Estoque: Disponivel</p>
+                </div>
 
             </div>
 
-            <p class="payment_text font_slide-h2 color_secundary">até 2x de R$ 34,95 sem juros<br>
-                ou 67,40 via Boleto Bancário</p>
-            <br>
+            <div class="payment">
+                <h1 class="color_secundary font_slide-h1">R$ 69,90</h1>
 
-
-            <div class="payment_list">
-
-                <button class="btn_payment font_opc-pay color_green-link onclic" onclick="toggleImagem()">Outras formas
-                    de
-                    pagamento ▼
-                </button>
-                <div class="forma_pagamento">
-
-                    <div id="forma_pagamento" class="imagem-div">
-                        <img class="forma_pagamento" src="../../assets/images/forma_pagamento.svg"
-                            alt="forma_pagamento">
-                    </div>
+                <div class="images_card">
+                    <img class="card" src="../../assets/images/card.svg" alt="card">
 
                 </div>
-                <div class="add_car">
-                    <div class="btn_quantity">
-                        <button class="space" onclick="decrementar()"><strong>-</strong></button>
-                        <span class="color_secundary font_opc-pay" id="contador">0</span>
-                        <button class="space" onclick="incrementar()"><strong> +</strong></button>
-                    </div>
 
-                    <div class="addon">
-                        <button class="button_car_payment color_secundary font_btn-input ">
-                            Adicionar ao carrinho
-                            <img class="add_cart" src="../../assets/icons/cart_add.svg" alt="">
-                        </button>
+                <p class="payment_text font_slide-h2 color_secundary">até 2x de R$ 34,95 sem juros<br>
+                    ou 67,40 via Boleto Bancário</p>
+                <br>
+
+
+                <div class="payment_list">
+
+                    <button class="btn_payment font_opc-pay color_green-link onclic" onclick="toggleImagem()">Outras
+                        formas
+                        de
+                        pagamento ▼
+                    </button>
+                    <div class="forma_pagamento">
+
+                        <div id="forma_pagamento" class="imagem-div">
+                            <img class="forma_pagamento" src="../../assets/images/forma_pagamento.svg"
+                                alt="forma_pagamento">
+                        </div>
+
+                    </div>
+                    <div class="add_car">
+                        <div class="btn_quantity">
+                            <button class="space" onclick="decrementar()"><strong>-</strong></button>
+                            <span class="color_secundary font_opc-pay" id="contador">0</span>
+                            <button class="space" onclick="incrementar()"><strong> +</strong></button>
+                        </div>
+
+                        <div class="addon">
+                            <button class="button_car_payment color_secundary font_btn-input ">
+                                Adicionar ao carrinho
+                                <img class="add_cart" src="../../assets/icons/cart_add.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+            <div class="cep">
+                <input type="text" id="cep" class="cep-input" placeholder="CEP">
+                <p class="calcular color_secundary font_btn-input">CALCULAR</p>
+
+            </div>
         </div>
 
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-
-        <div class="cep">
-            <input type="text" id="cep" class="cep-input" placeholder="CEP">
-            <p class="calcular color_secundary font_btn-input">CALCULAR</p>
-
+    </div>
+    
+    <div class="carousel">
+        
+        <div class="carousel_title ">
+            <h1 class="font_slide-h1 color_secundary">Produtos Relacionados</h1>
         </div>
+        
+        <div class="carousel-barbershop"></div>
+        
+        
     </div>
-
-</div>
-<div class="carousel">
-    <div class="carousel_title ">
-        <h1 class="font_slide-h1 color_secundary">Produtos Relacionados</h1>
+    
+    <div class="product_discription">
+        <div class="descricao-produto">
+            
+            <button class="botao-exibir color_secundary font_slide-h1" onclick="toggleDescricao()"> Descrição do Produto
+            </button>
+            <p class="font_slide-descri--2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a
+                ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique
+                efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut,
+                pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu
+                mollis
+                lorem condimentum sed.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a
+                ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique
+                efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut,
+                pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu
+                mollis
+                lorem condimentum sed.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a
+                ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique
+                efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut,
+                pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu
+                mollis
+                lorem condimentum sed.
+            </p>
+        </div>
+        
+        
+        
+        <script src="script.js"></script>
     </div>
-    <div class="carousel-product"></div>
-</div>
-
-<div class="product_discription">
-    <div class="descricao-produto">
-
-        <button class="botao-exibir color_secundary font_slide-h1" onclick="toggleDescricao()"> Descrição do Produto
-        </button>
-        <p class="font_slide-descri--2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a
-            ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique
-            efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut,
-            pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu mollis
-            lorem condimentum sed.
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a
-            ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique
-            efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut,
-            pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu mollis
-            lorem condimentum sed.
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus libero sed velit laoreet, a
-            ultrices justo fermentum. Nulla a turpis at justo cursus maximus non quis ligula. Donec congue tristique
-            efficitur. Curabitur dapibus feugiat massa at pulvinar. Nunc quis nisl convallis, varius ipsum ut,
-            pellentesque nunc. Quisque nec quam sit amet ex tempor sodales. Suspendisse ornare ultrices ex, eu mollis
-            lorem condimentum sed.</p>
-    </div>
-
-  
-
-<script src="script.js"></script>
-</div>
+    
+    <footer-component></footer-component>
+</body>
 
 </html>

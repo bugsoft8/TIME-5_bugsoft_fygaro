@@ -1,3 +1,5 @@
+
+
 .content {
     display: flex;
     gap: 129px;
@@ -214,7 +216,6 @@ input {
 
 .cep {
     display: flex;
-    margin left: 220px;
     margin-top: 30px;
 }
 
