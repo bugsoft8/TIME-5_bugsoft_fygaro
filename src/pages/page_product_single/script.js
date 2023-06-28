@@ -51,3 +51,8 @@ function decrementar() {
     descricaoDiv.classList.toggle('expandir');
   }
 
+  function exibirFormulario() {
+    var formularioDiv = document.getElementById("formulario-avaliacao");
+    formularioDiv.style.display = "block";
+  }
+
