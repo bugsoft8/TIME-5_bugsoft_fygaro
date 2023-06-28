@@ -123,15 +123,69 @@ Array.from(bodyElementsProduct).forEach(function (element) {
     element.appendChild(imageCarouselElement);
 
     const sliderProduct = initSlider(imageCarouselElement);
-
+    
 });
-/*------------------------------------------------ END PRODUCTS CAROUSEL --------------------------------------------------*/
+/*------------------------------------------------ END PRODUCTS CAROUSEL --------------------------------------------------*/ 
 
-/*------------------------------------------------ START BARBERSHOP CAROUSEL --------------------------------------------------*/
+/*------------------------------------------------ START BARBERSHOP CAROUSEL --------------------------------------------------*/ 
 const imageCarouselBarbershop = document.createElement('div');
 
 imageCarouselBarbershop.innerHTML = `
-    
+
+<style>   
+    .slide-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        width: 1110px;
+        height: 240px;
+        overflow: hidden; 
+        position: relative;
+    }
+
+    .slide-list {
+        display: flex;
+    }
+
+    .slide-item {
+        flex-shrink: 0;
+        padding: 0 15px;
+    }
+
+    .slide-content > img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .slide-btn {
+        margin-bottom: 65px;
+        position: absolute;
+        z-index: 1;
+        border: none;
+        cursor: pointer;
+    }
+
+    .slide-btn {
+        width: 30px;
+        height: 172px;
+        background: rgba(217, 217, 217, 0.5);
+    }
+
+    .slide-btn-prev {
+        left: 0;
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    .slide-btn-next {
+        right: 0;
+    }
+
+    .slide-btn-next > img {
+        transform: rotate(180deg);
+    }
+</style>
+  
     <div class="wrapper">
         <div class="slide-wrapper" data-slide="wrapper">
             <button class="slide-btn slide-btn-prev" data-slide="slide-btn-prev">
@@ -194,13 +248,13 @@ imageCarouselBarbershop.innerHTML = `
 const bodyElementsBarbershop = document.getElementsByClassName('carousel-barbershop');
 
 Array.from(bodyElementsBarbershop).forEach(function (element) {
-    const imageCarouselElement = document.createElement('div');
-    imageCarouselElement.innerHTML = imageCarouselBarbershop.innerHTML;
-    element.appendChild(imageCarouselElement);
-
-    const sliderBarbershop = initSlider(imageCarouselElement);
+        const imageCarouselElement = document.createElement('div');
+        imageCarouselElement.innerHTML = imageCarouselBarbershop.innerHTML;
+        element.appendChild(imageCarouselElement);
+    
+        const sliderBarbershop = initSlider(imageCarouselElement);
 });
-/*------------------------------------------------ END BARBERSHOP CAROUSEL --------------------------------------------------*/
+/*------------------------------------------------ END BARBERSHOP CAROUSEL --------------------------------------------------*/ 
 
 function initSlider(carouselElement) {
     const slideWrapper = carouselElement.querySelector('.slide-wrapper');
