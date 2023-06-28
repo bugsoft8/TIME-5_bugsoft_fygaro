@@ -1,0 +1,68 @@
+body {
+    width: 1440px;
+}
+::placeholder {
+    color: #C2C2C2;
+}
+.home {
+    height: 596px;
+    background-image: url(../../assets/images/background_1.svg);
+    padding-top: 90px;
+}
+.home_content > img {
+    width: 170px;
+    height: 45px;
+}
+.home_content{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.home_content > h1{
+    text-transform: uppercase;
+}
+.search_bar {
+    width: 543px;
+    position: relative; 
+}
+.search_bar >img {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    margin: 12px 0 0 20px;
+}
+.searchBarHome {
+    background-color: #F5F3F4;
+    width: 543px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 28px 2px rgba(0, 0, 0, 0.11); 
+    padding-left: 50px;
+    transition: padding 0.3s ease-in-out;
+}
+.home_container {
+    height: 1264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 200px 0 50px 0;
+    align-items: center;
+    
+}
+.container_title {
+    margin-bottom: 30px;
+}
+/* estilos para adicionar e remover o heder em pontos especificos da tela, usados no codigo js */
+.home_header {
+    display: none;
+    opacity: 0; 
+    transition: opacity 0.5s ease;  
+}
+.header_show {
+    display: inline;
+    opacity: 1; 
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../components/image_carousel/carousel.js" type="text/javascript" defer></script>
+    <script src="../../components/header-footer/HeaderFooter.js" type="text/javascript" defer></script>
+    <script src="../page_home/index.js"></script>
+    <link rel="stylesheet" href="../../assets/reset/reset.css">
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../../assets/colors/colors.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Page Home</title>
+</head>
+<body>
+    <header-component class="home_header"></header-component>
+    <div class="home">
+        <div class="home_content">
+            <img src="../../assets/images/logo--white.svg" alt="Fygaro_Logo">
+            <h1 class="font_h1 color_primary">Encontre a Barbearia Perfeita <br> Para o Seu Estilo de Vida.</h1>
+            <div class="search_bar">
+                <img src="../../assets/icons/search_icon.svg" alt="search_icon">
+                <form>
+                    <input class="searchBarHome color_gray-dark" type="text" placeholder="                          Barbearias                   |                   Produtos    ">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="home_container">
+        <div>
+            <h2 class="container_title font_slide-h1 color_secundary">Barbearias em Destaque</h2>
+            <div class="carousel-barbershop"></div>
+        </div>
+        <div>
+            <h2 class="container_title font_slide-h1 color_secundary">Barbearias Perto de Você</h2>
+            <div class="carousel-barbershop"></div>
+        </div>
+        <div>
+            <h2 class="container_title font_slide-h1 color_secundary">Produtos em Destaque</h2>
+            <div class="carousel-product"></div>
+            <div class="carousel-product"></div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+</body>
+</html>
