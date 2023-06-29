@@ -1,0 +1,32 @@
+body{
+    width: 1440px;
+}
+
+.Meu_carrinho_vazio {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.linha_vazio {
+    width: 1110px;
+    margin-left: 100px;
+}
+
+.Carrinho_vazio_vazio {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.Comprar_novamente_vazio {
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    margin-bottom: 50px;
+}
+
+.Carrinho_vazio_carrosel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}
