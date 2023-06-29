@@ -1,0 +1,79 @@
+
+body{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagem_mapa_page_barbearia{
+    width: 1440px;
+}
+
+.page_barbearia_carrosel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.descricao_page_barberia_destaques{
+   margin-bottom: 27px;
+
+}
+
+
+/*  */
+.all_opcoes_page_barbearia{
+    display: flex;
+    flex-direction: column;
+    height: 857px;
+    justify-content: space-between;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcoes_barbearia_parte_de_escolha_page_barbearias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1114px;
+}
+
+
+.p_barbearia_parte_de_escolha_page_barbearias{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.parte_direita_das_opcoes_page_barbearia{
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    height: 241px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.img_barbearia_parte_de_escolha_page_barbearias{
+    width: 350px;
+    height: 221px;
+}
+
+.escolhas_page_barbearia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.opcoes_menu_page_barbearia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Tempo_da_escolha_page_barbearia{
+    align-items: end;
+    text-align: right
+}
