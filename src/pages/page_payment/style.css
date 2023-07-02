@@ -1,0 +1,168 @@
+body{
+    width: 1440px;
+    height: 2015px;
+}
+
+
+.content_payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 948px;
+    margin-top: 50px;
+    margin-left: 160px;
+}
+
+
+.input_card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cartao_salvo {
+    width: 800px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+    background: #FFF;
+}
+
+.seta {
+    position: absolute;
+    margin-left: 1020px;
+}
+
+.card_method {
+    align-items: center;
+    justify-content: center;
+    margin-left: 220px;
+    margin-top: 38px;
+}
+
+.tiny_text {
+    display: flex;
+    margin-right: 255px;
+}
+
+.input_card_ {
+    display: flex;
+    align-items: center;
+    gap: 152px;
+}
+
+.more_info {
+    margin-top: 22px;
+}
+
+.input_card_1 {
+    display: flex;
+    align-items: center;
+    margin-left: 254px;
+}
+
+.input_card_2 {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    margin-right: 515px;
+}
+
+.text_cvv {
+    display: flex;
+    width: 236px;
+    height: 45px;
+    align-items: center;
+    margin-right: 15px;
+
+}
+
+.cartao_salvo_ {
+    display: flex;
+    width: 285px;
+    height: 51px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+    background: #FFF;
+}
+
+.cartao_salvo_3 {
+    width: 253px;
+    height: 51px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+    background: #FFF;
+}
+
+.cartao_salvo_4 {
+    width: 190px;
+    height: 51px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+    background: #FFF;
+    margin-left: 32px;
+}
+
+::placeholder {
+    font-size: 20px
+}
+
+
+input {
+    text-align: center;
+    padding: 10px;
+}
+
+.validade {
+    padding-left: 190px;
+
+}
+
+.cartao_salvo_5 {
+    width: 447px;
+    height: 51px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+    background: #FFF;
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.input_card_ {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+
+}
+
+
+
+.btn_payment {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 32px;
+}
+
+
+.btn_payment>button {
+    margin-right: 350px;
+}
+
+.confirm {
+    margin-top: 40px;
+    width: 280px;
+    height: 53px;
+    border-radius: 5px;
+    background: rgba(23, 255, 3, 0.88);
+    margin-right: 270px;
+    border: none;
+}
+
+.pix_boleto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 450px;
+}
