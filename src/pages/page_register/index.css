@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    height: 439px;
+    border: 3px solid black;
+    margin-top: 10vh;
+}
+
+.registro-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 279px;
+    height: 335px;
+}
+
+.formulario {
+    width: 279px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    width: 277px;
+    border-radius: 5px;
+}
+
+.button {
+    margin-top: 20px;
+    background-color: #17FF03;
+    width: 279px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
