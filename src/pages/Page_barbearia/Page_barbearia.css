@@ -77,3 +77,61 @@ body{
     align-items: end;
     text-align: right
 }
+/* ---------------- filter --------------- */
+.wrapper_filter {
+    margin-left: 163px;
+    position: absolute;
+}
+.filter_option {
+    width: 350px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0.5px solid #C2C2C2;
+    padding: 0 10px;
+}
+
+#filter_button {
+    width: 140px;
+    height: 30px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 0.5px solid #C2C2C2;
+    cursor: pointer;
+}
+
+#btn-container {
+    display: none;
+    background-color: white;
+}
+
+.price_inputs {
+    display: flex;
+    gap: 20px;
+}   
+.price_filter {
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.5px solid #C2C2C2;
+}
+.container_options {
+    display: flex;
+    gap: 30px;
+}
+.local_container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.local_options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+    border: 0.5px solid #C2C2C2;
+    border-radius: 5px;
+    cursor: pointer;
+}

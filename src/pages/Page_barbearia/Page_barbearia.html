@@ -29,9 +29,62 @@
                 <div class="carousel-barbershop"></div>
         </div>
 
-        <!-- Botâo de filtros -->
     </div>
+    <!-- Botâo de filtros -->
 
+  
+    <div class="wrapper_filter">
+        <button id="filter_button" class="font_filter-title color_secundary" onclick="exibirFiltro()">Filtros</button>
+        <div id="btn-container">
+            <div class="filter_option">
+                <h3 class="font_slide-h2 color_secundary">Preço</h3>
+                <div class="price_inputs">
+                    <input class="price_filter font_slide-descri color_gray-white--input" type="number" placeholder="Min.">
+                    <input class="price_filter font_slide-descri color_gray-white--input" type="number" placeholder="Max.">
+                </div>
+                <h3 class="font_slide-h2 color_secundary">Avaliação</h3>
+                <div class="filter_stars">
+                    <img src="../../assets/icons/star.svg" alt="Star-icon">
+                    <img src="../../assets/icons/star.svg" alt="Star-icon">
+                    <img src="../../assets/icons/star.svg" alt="Star-icon">
+                    <img src="../../assets/icons/star.svg" alt="Star-icon">
+                    <img src="../../assets/icons/star.svg" alt="Star-icon">
+                </div>
+                <h3 class="font_slide-h2 color_secundary">Local</h3>
+                <div class="container_options">
+                    <div class="local_container">
+                        <button class="local_options" href="#">
+                            <img src="../../assets/icons/offer_air.svg" alt="air-c-icon">
+                            <p>Ar-condicionado</p>
+                        </button>
+                        <button class="local_options" href="#">
+                            <img src="../../assets/icons/offer_wifi.svg" alt="wifi-icon">
+                            <p>Wi-Fi</p>
+                        </button>
+                        <button class="local_options" href="#">
+                            <img src="../../assets/icons/offer_parking.svg" alt="parking-icon">
+                            <p>Estacionamento</p>
+                        </button>
+                    </div>
+                    <div class="local_container">
+                        <button class="local_options" href="#">
+                            <img src="../../assets/icons/offer_beer.svg" alt="beer-icon">
+                            <p>Bebidas</p>
+                        </button>
+                        <button class="local_options" href="#">
+                            <img src="../../assets/icons/offer_tv.svg" alt="Tv-icon">
+                            <p>Tv</p>
+                        </button>
+                        <button class="local_options" href="#">
+                            <img src="../../assets/icons/offer_game.svg" alt="game-icon">
+                            <p>Videogame</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <div class="all_opcoes_page_barbearia">
 
@@ -195,6 +248,7 @@
 
     </div>
 
+    <script src="./Page_barbearia.js"></script>
 </body>
 
 </html>
