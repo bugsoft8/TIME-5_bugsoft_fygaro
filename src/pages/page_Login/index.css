@@ -1,0 +1,72 @@
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    height: 439px;
+    border: 3px solid black;
+    margin-top: 10vh;
+}
+
+.login-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 279px;
+    height: 335px;
+}
+
+.login-logo {
+    width: 119.25px;
+    height: 154.99px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 279px;
+    height: 95px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.senha {
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 5px;
+    width: 279px;
+}
+
+.button {
+    background-color: #17FF03;
+    width: 279px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.opções {
+    width: 278px;
+    height: 25px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
