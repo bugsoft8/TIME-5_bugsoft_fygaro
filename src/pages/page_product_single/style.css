@@ -259,6 +259,7 @@ input {
     overflow: hidden;
     max-height: 4em;
     gap: 10px;
+    margin-bottom: 30px;
 }
 
 .descricao-produto.expandir {
@@ -275,3 +276,11 @@ input {
     background-color: white;
 }
 
+footer {
+    margin-top: 1000px;
+}
+
+body {
+    width: 2000px;
+    margin: auto;
+}
