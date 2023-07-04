@@ -70,10 +70,10 @@ headerTemplate.innerHTML = `
     }
     .vertical_line {
         border-left: 2px solid;
-        height: 24px;
+        height: 30px;
     }
     .profile_btns {
-        width: 125px;
+        width: 110px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -89,7 +89,7 @@ headerTemplate.innerHTML = `
         border-color: transparent;
     }
     .btn_user {
-        width: 64px;
+        width: 50px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -97,7 +97,7 @@ headerTemplate.innerHTML = `
         border-color: transparent;
     }
     .btn_cart {
-        width: 54px;
+        width: 50px;
         border-radius: 0 100px 100px 0 ;
         border-color: transparent;
     }
@@ -127,19 +127,19 @@ headerTemplate.innerHTML = `
             </form>
         </div>
         <div class="nav_btns">
-            <a href="#">
+            <a href="../../pages/Page_barbearia/Page_barbearia.html">
                 <button class="btn_nav btn_change">
                     <img  src="../../assets/icons/header_barbershop.svg" alt="barbershop_btn">
                     <p class="font_btn-primaty color_primary">BARBEARIAS</p>
                 </button>
             </a>
-            <a href="#">
+            <a href="../../pages/page_home/index.html">
                 <button class="btn_nav btn_change">
                     <img src="../../assets/icons/header_home.svg" alt="home_btn">
                     <p class="font_btn-primaty color_primary">HOME</p>
                 </button>
             </a>
-            <a href="#">
+            <a href="../../pages/page_product/index.html">
                 <button class="btn_nav btn_change">
                     <img src="../../assets/icons/header_produtos.svg" alt="products_btn">
                     <p class="font_btn-primaty color_primary">PRODUTOS</p>
@@ -152,14 +152,13 @@ headerTemplate.innerHTML = `
             <button class="btn_change btn_header btn_shopprofile font_btn-primaty color_primary">LISTAR A SUA EMPRESA</button>
         </a>
         <div class="profile_btns">
-            <a href="#">
+            <a href="../../pages/Page_user/page_user.html">
                 <button class="btn_header btn_user btn_change">
-                    <img src="../../assets/icons/header_vector.svg" alt="profile_vector">
                     <img src="../../assets/icons/header_profile.svg" alt="profile_btn">
                 </button>
             </a>
             <div class="vertical_line color_primary"></div>
-            <a href="#">
+            <a href="../../pages/Carrinho_vazio/Carrinho_vazio.html">
                 <button class="btn_header btn_cart btn_change">
                     <img src="../../assets/icons/header_cart.svg" alt="cart_btn">
                 </button>
