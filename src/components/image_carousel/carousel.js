@@ -1,4 +1,4 @@
-/*------------------------------------------------ START PRODUCTS CAROUSEL --------------------------------------------------*/ 
+/*------------------------------------------------ START PRODUCTS CAROUSEL --------------------------------------------------*/
 const imageCarouselProduct = document.createElement('div');
 
 imageCarouselProduct.innerHTML = `

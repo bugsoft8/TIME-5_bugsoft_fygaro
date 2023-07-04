@@ -1,0 +1,277 @@
+
+
+.content {
+    display: flex;
+    gap: 129px;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+    display: inline;
+    position: relative;
+}
+
+
+.switch input {
+    display: none;
+}
+
+.switch_circle {
+    display: flex;
+    position: absolute;
+    gap: 12px;
+    margin-top: 330px;
+    margin-right: 550px;
+    justify-content: center;
+}
+
+.switch_circle input {
+    display: none;
+}
+
+
+.bolinha {
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    background-color: rgb(0, 255, 81);
+
+}
+
+.bolinha_verde {
+    background-color: rgb(131, 130, 130);
+
+}
+
+.product_detail {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    width: 444px;
+    height: 413px;
+}
+
+
+
+.title_detail {
+    width: 444px;
+    height: 88px;
+    position: relative;
+    display: flex;
+}
+
+.images_title {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-top: 87px;
+    width: 71px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+
+.estoque_detail {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+    width: 145px;
+    margin-right: 100px;
+}
+
+.text_color {
+    background: linear-gradient(to right, rgb(0, 0, 0) 35%, #33FF21 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botao {
+    position: absolute;
+    z-index: 1;
+    margin-top: 180px;
+    cursor: pointer;
+}
+
+.botao_left {
+    transform: rotate(180deg);
+}
+
+.botao_right {
+    right: 0;
+}
+
+.imagem-div {
+    display: none;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 126px;
+    width: 430px;
+    height: 179px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.images_card {
+    align-items: flex-start;
+    margin-left: 240px;
+    position: absolute;
+}
+
+.payment_text {
+    margin-top: 10.4px;
+    width: 271px;
+    height: 40px;
+    text-decoration-line: underline;
+}
+
+.btn_payment {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+
+}
+
+.forma_pagamento {
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+}
+
+
+
+.addon {
+    justify-content: flex-end;
+}
+
+.button_car_payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(219, 201, 201, 0.6);
+    width: 209px;
+    height: 34px;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.25));
+}
+
+.add_car {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.btn_quantity {
+    display: flex;
+    margin-right: 280px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68.171px;
+    height: 34.747px;
+    border: 0.5px solid var(--secondary-color, #1B1919);
+    background: rgba(242, 241, 241, 0.85);
+}
+
+
+.space {
+    width: 31.463px;
+    height: 34.747px;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+    display: flex;
+    color: var(--gray-dark, #5A5A5A);
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.cep {
+    display: flex;
+    margin-top: 30px;
+}
+
+.cep>p {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 190px;
+}
+
+.calcular {
+    cursor: pointer;
+}
+
+.carousel_title {
+    margin-top: 173px;
+    margin-right: 850px;
+}
+
+.carousel {
+    display: flex;
+    margin-top: 146px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.product_discription {
+    margin-left: 100px;
+    margin-top: 220px;
+    width: 1110px;
+    height: 92px;
+
+}
+
+.descricao-produto {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    overflow: hidden;
+    max-height: 4em;
+    gap: 10px;
+}
+
+.descricao-produto.expandir {
+    max-height: none;
+    color: black;
+
+}
+
+.botao-exibir {
+    width: 393px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
