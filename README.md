@@ -12,6 +12,7 @@ O projeto será focado em trazer o nicho das barbearias para algo similar a um m
 
 ### Branch
 > Deve ser criarda uma nova branch para cada página nova, seguindo o padrão de nomenclatura já definida no trello.
+
 - **EXEMPLO** Para criar a página `register`. <br>
 1 - Crie primeiro uma branch chamada `register`, usando o comando: ```git checkout -b register```.<br>
 2 - A partir disso, crie uma pasta usando o mesmo nome.<br>
