@@ -7,6 +7,7 @@ reviewField.innerHTML = `
     height: 630px;
     padding: 20px 30px;
     border: 0.5px solid #1B1919;
+    position: relative;
 }
 
 .review-header {
@@ -116,6 +117,34 @@ reviewField.innerHTML = `
             </div>
             <img src="../../assets/images/assessments.svg" alt="media de avaliações">
         </div>
+        <div id="comment-tab">
+        <div class="rating-stars">
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
+            </svg></label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
+            </svg></label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
+            </svg></label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
+            </svg></label>
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
+            </svg></label>
+        </div>
+        <form id="comment-form">
+            <label class="font_link-h2 color_secundary" for="comment">Comentário</label>
+            <input type="text" id="comment-field" name="comment" class="color_secundary font_slide-h2" placeholder="Digite aqui" maxlength="114">
+        </form>
+    </div>
         <div class="review-body">
             <div>
                 <img src="../../assets/icons/star--group.svg" alt="estrelas da avaliação">
@@ -147,35 +176,6 @@ reviewField.innerHTML = `
         </div>
         <hr>
     </section>
-
-    <div id="comment-tab">
-        <div class="rating-stars">
-            <input type="radio" id="star1" name="rating" value="1" />
-            <label for="star1"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
-            </svg></label>
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
-            </svg></label>
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
-            </svg></label>
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
-            </svg></label>
-            <input type="radio" id="star5" name="rating" value="5" />
-            <label for="star5"><svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path class="star-fill" d="M12 1.042l3.878 7.901 8.661 1.258-6.263 6.098 1.48 8.611-7.757-4.08-7.757 4.08 1.48-8.611L.461 10.202l8.66-1.258L12 1.042z"/>
-            </svg></label>
-        </div>
-        <form id="comment-form">
-            <label class="font_link-h2 color_secundary" for="comment">Comentário</label>
-            <input type="text" id="comment-field" name="comment" class="color_secundary font_slide-h2" placeholder="Digite aqui" maxlength="114">
-        </form>
-    </div>
 `;
 
 const reviewComponent = document.getElementById('review-component');
