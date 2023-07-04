@@ -7,6 +7,7 @@ headerTemplate.innerHTML = `
         height: 90px;
         background-color: #1B1919;
         display: flex;
+        justify-content: space-between;
         padding: 0 80px;
         position: sticky;
         top: 0;
