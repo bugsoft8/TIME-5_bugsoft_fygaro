@@ -66,49 +66,59 @@ imageCarouselProduct.innerHTML = `
             </button>
             <div class="slide-list" data-slide="list">
                 <div class="slide-item" data-slide="item" data-index="0">
-                    <div class="slide-content">
-                        <img src="../../assets/images/product_slider.svg" alt="Balm Barba de Respeito">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Balm Barba de Respeito 100g</h3>
-                            <p class="font_slide-descri color_gray-dark">R$69,90</p>
+                    <a href="../../pages/page_product_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/product_slider.svg" alt="Balm Barba de Respeito">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Balm Barba de Respeito 100g</h3>
+                                <p class="font_slide-descri color_gray-dark">R$69,90</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="1">
-                    <div class="slide-content">
-                        <img src="../../assets/images/product_slider.svg" alt="Kit de Hidratação para Barba">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Kit de Hidratação para Barba</h3>
-                            <p class="font_slide-descri color_gray-dark">R$ 76,32</p>
+                    <a href="../../pages/page_product_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/product_slider.svg" alt="Kit de Hidratação para Barba">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Kit de Hidratação para Barba</h3>
+                                <p class="font_slide-descri color_gray-dark">R$ 76,32</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="2">
-                    <div class="slide-content">
-                        <img src="../../assets/images/product_slider.svg" alt="Kit Deu Match!">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Kit Deu Match! Para Barba com(Matt...</h3>
-                            <p class="font_slide-descri color_gray-dark">R$ 199,99</p>
+                    <a href="../../pages/page_product_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/product_slider.svg" alt="Kit Deu Match!">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Kit Deu Match! Para Barba com(Matt...</h3>
+                                <p class="font_slide-descri color_gray-dark">R$ 199,99</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="3">
-                    <div class="slide-content">
-                        <img src="../../assets/images/product_slider.svg" alt="Balm para Barba Casa Barros">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Balm para Barba Casa Barros - 120G</h3>
-                            <p class="font_slide-descri color_gray-dark">R$ 65,00 </p>
+                    <a href="../../pages/page_product_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/product_slider.svg" alt="Balm para Barba Casa Barros">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Balm para Barba Casa Barros - 120G</h3>
+                                <p class="font_slide-descri color_gray-dark">R$ 65,00 </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="4">
-                    <div class="slide-content">
-                        <img src="../../assets/images/product_slider.svg" alt="Shampoo Escurecedor de Cabelo">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Shampoo Escurecedor de Cabelo - Th...</h3>
-                            <p class="font_slide-descri color_gray-dark">R$ 69,90</p>
+                    <a href="../../pages/page_product_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/product_slider.svg" alt="Shampoo Escurecedor de Cabelo">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Shampoo Escurecedor de Cabelo - Th...</h3>
+                                <p class="font_slide-descri color_gray-dark">R$ 69,90</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -196,49 +206,59 @@ imageCarouselBarbershop.innerHTML = `
             </button>
             <div class="slide-list" data-slide="list">
                 <div class="slide-item" data-slide="item" data-index="0">
-                    <div class="slide-content">
-                        <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Perdomo">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Barbearia Perdomo</h3>
-                            <p class="font_slide-descri color_gray-dark">Rua do Magistério, 344, 85875-000,<br>Santa Terezinha de Itaipu</p>
+                    <a href="../../pages/barbershop_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Perdomo">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Barbearia Perdomo</h3>
+                                <p class="font_slide-descri color_gray-dark">Rua do Magistério, 344, 85875-000,<br>Santa Terezinha de Itaipu</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="1">
-                    <div class="slide-content">
-                        <img src="../../assets/images/barbershop_slider.svg" alt="Renovo_Barbershop">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Renovo Barbershop</h3>
-                            <p class="font_slide-descri color_gray-dark">Rua Edmundo de Barros,<br>163, 1, 85856-310, Foz do Iguaçu</p>
+                    <a href="../../pages/barbershop_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/barbershop_slider.svg" alt="Renovo_Barbershop">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Renovo Barbershop</h3>
+                                <p class="font_slide-descri color_gray-dark">Rua Edmundo de Barros,<br>163, 1, 85856-310, Foz do Iguaçu</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="2">
-                    <div class="slide-content">
-                        <img src="../../assets/images/barbershop_slider.svg" alt="Original_Barbearia-e-Lavacar">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Original Barbearia e Lavacar</h3>
-                            <p class="font_slide-descri color_gray-dark">Rua Emilio de Menezes,<br>497, 85864-240, Foz do Iguaçu</p>
+                    <a href="../../pages/barbershop_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/barbershop_slider.svg" alt="Original_Barbearia-e-Lavacar">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Original Barbearia e Lavacar</h3>
+                                <p class="font_slide-descri color_gray-dark">Rua Emilio de Menezes,<br>497, 85864-240, Foz do Iguaçu</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="3">
-                    <div class="slide-content">
-                        <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Alexandre_Santos">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Barbearia Alexandre Santos</h3>
-                            <p class="font_slide-descri color_gray-dark">Rua Iraque, N 70, 13315-000,<br>Cabreúva</p>
+                    <a href="../../pages/barbershop_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/barbershop_slider.svg" alt="Barbearia_Alexandre_Santos">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Barbearia Alexandre Santos</h3>
+                                <p class="font_slide-descri color_gray-dark">Rua Iraque, N 70, 13315-000,<br>Cabreúva</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="slide-item" data-slide="item" data-index="4">
-                    <div class="slide-content">
-                        <img src="../../assets/images/barbershop_slider.svg" alt="Black_White_BarberShop">
-                        <div class="slide-description">
-                            <h3 class="font_slide-h2 color_secundary">Black White Barber Shop</h3>
-                            <p class="font_slide-descri color_gray-dark">Av Felipe Wandscheer, 1426, 85863-730,<br>Foz do Iguaçu</p>
+                    <a href="../../pages/barbershop_single/index.html">
+                        <div class="slide-content">
+                            <img src="../../assets/images/barbershop_slider.svg" alt="Black_White_BarberShop">
+                            <div class="slide-description">
+                                <h3 class="font_slide-h2 color_secundary">Black White Barber Shop</h3>
+                                <p class="font_slide-descri color_gray-dark">Av Felipe Wandscheer, 1426, 85863-730,<br>Foz do Iguaçu</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
