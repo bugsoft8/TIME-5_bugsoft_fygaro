@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="../../assets/colors/colors.css">
     <link rel="stylesheet" href="./page_user.css">
     <script src="../../components/image_carousel/carousel.js" type="text/javascript" defer></script>
-    <script src="../../components/image_carousel/carousel.js" type="text/javascript" defer></script>
     <script src="../../components/header-footer/HeaderFooter.js" type="text/javascript" defer></script>
     <title>page_user</title>
 </head>
-<body>
-    <header-component></header-component>
 
+<header class="user_header">
+    <header-component></header-component>
+</header>
+
+<body>
+    
     <section class="page_user-body">
 
         <div class="page_user-form">
@@ -50,12 +53,17 @@
                 </div>
 
             </form>
-        
         </div>
-
     </section>
-    <div class="carousel-barbershop"></div>
-    <div class="carousel-product"></div>
-    <div class="carousel-barbershop"></div>
+
+        <div class="carousel-barbershop">
+            <h2 class="font_slide-h2" id="h2-carrossel">Babearias Favoritas</h2>
+        </div>
+        <div class="carousel-product">
+            <h2 class="font_slide-h2" id="h2-carrossel">Produtos Favoritos</h2>
+        </div>
+        <div class="carousel-barbershop">
+            <h2 class="font_slide-h2" id="h2-carrossel">Comprados Recentemente</h2>
+        </div>
 </body>
 </html>
