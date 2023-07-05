@@ -6,6 +6,14 @@ body {
     height: 1440px;
 }
 
+.user_header {
+    position: sticky;
+    z-index: 990;
+    top: 0px;
+    align-items: center;
+    width: 100vw;
+}
+
 .page_user-form {
     display: flex;
     justify-content: space-around;
