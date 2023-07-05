@@ -3,7 +3,7 @@
 .content {
     display: flex;
     gap: 129px;
-    justify-content: center;
+    justify-content:  center;
     align-items: center;
 }
 
@@ -263,7 +263,6 @@ input {
 }
 
 .descricao-produto.expandir {
-    max-height: none;
     color: black;
 
 }
@@ -277,10 +276,11 @@ input {
 }
 
 footer {
-    margin-top: 1000px;
+    margin-top: 800px;
 }
 
-body {
-    width: 2000px;
-    margin: auto;
-}
+.merge_fix {
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+}   

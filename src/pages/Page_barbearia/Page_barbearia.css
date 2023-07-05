@@ -1,13 +1,16 @@
-
+/* 
 body{
-    width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    justify-content: center;
+} */
+/* header-component {
+    width: 100%;
+} */
 
 .Imagem_mapa_page_barbearia{
-    width: 1440px;
+    width: 100vw;
 }
 
 .page_barbearia_carrosel{
@@ -79,7 +82,8 @@ body{
 }
 /* ---------------- filter --------------- */
 .wrapper_filter {
-    margin-left: 163px;
+    padding-left: 202px;
+    /* left: 0; */
     position: absolute;
 }
 .filter_option {

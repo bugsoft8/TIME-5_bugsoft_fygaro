@@ -1,8 +1,3 @@
-body{
-    width: 1440px;
-    height: 2015px;
-}
-
 
 .content_payment {
     display: flex;
@@ -165,4 +160,5 @@ input {
     align-items: center;
     justify-content: center;
     margin-right: 450px;
+    margin-bottom: 80px;
 }
